@@ -29,6 +29,7 @@
 		37C10DB020078DA400331A97 /* SdkNaveggIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C10DA220078DA400331A97 /* SdkNaveggIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37C10DBB20078E1600331A97 /* NaveggApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C10DBA20078E1600331A97 /* NaveggApi.swift */; };
 		37C10DBD20078E5C00331A97 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C10DBC20078E5C00331A97 /* Util.swift */; };
+		FFCEE50BA077C05354473038 /* libPods-SdkNaveggIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF2C6EE74D2B71706BC412D /* libPods-SdkNaveggIOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +60,10 @@
 		37C10DAF20078DA400331A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37C10DBA20078E1600331A97 /* NaveggApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaveggApi.swift; sourceTree = "<group>"; };
 		37C10DBC20078E5C00331A97 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		3F1347F4713BC6FC36F130A0 /* Pods_SdkNaveggIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SdkNaveggIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		513EFAB29955F7BAC9809B69 /* Pods-SdkNaveggIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdkNaveggIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SdkNaveggIOS/Pods-SdkNaveggIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		72988B926D80B171D06EFC76 /* Pods-SdkNaveggIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdkNaveggIOS.release.xcconfig"; path = "Target Support Files/Pods-SdkNaveggIOS/Pods-SdkNaveggIOS.release.xcconfig"; sourceTree = "<group>"; };
 		752835A621F10C2300FD2420 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
-		A50BDC8A18EB1BE44175923B /* Pods-SdkNaveggIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdkNaveggIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SdkNaveggIOS/Pods-SdkNaveggIOS.release.xcconfig"; sourceTree = "<group>"; };
-		B2F7D448E8E00E514AB78A86 /* libPods-SdkNaveggIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SdkNaveggIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF2C6EE74D2B71706BC412D /* libPods-SdkNaveggIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SdkNaveggIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E260F374A1E9576564CA0C /* Pods-SdkNaveggIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdkNaveggIOS.debug.xcconfig"; path = "Target Support Files/Pods-SdkNaveggIOS/Pods-SdkNaveggIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCEE50BA077C05354473038 /* libPods-SdkNaveggIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +96,7 @@
 				37BB5C5E201B5F5F00069A98 /* Alamofire.framework */,
 				37BB5C5F201B5F5F00069A98 /* Reachability.framework */,
 				37BB5C60201B5F5F00069A98 /* SwiftProtobuf.framework */,
-				3F1347F4713BC6FC36F130A0 /* Pods_SdkNaveggIOSTests.framework */,
-				B2F7D448E8E00E514AB78A86 /* libPods-SdkNaveggIOS.a */,
+				ADF2C6EE74D2B71706BC412D /* libPods-SdkNaveggIOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 				37C10DAC20078DA400331A97 /* SdkNaveggIOSTests */,
 				37C10DA020078DA400331A97 /* Products */,
 				373099BB200791BE009655B8 /* Frameworks */,
-				FBE7397F005F018ADE2021E0 /* Pods */,
+				DCD4132085886004B94BCF80 /* Pods */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -169,13 +169,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		FBE7397F005F018ADE2021E0 /* Pods */ = {
+		DCD4132085886004B94BCF80 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				513EFAB29955F7BAC9809B69 /* Pods-SdkNaveggIOS.debug.xcconfig */,
-				A50BDC8A18EB1BE44175923B /* Pods-SdkNaveggIOS.release.xcconfig */,
+				E4E260F374A1E9576564CA0C /* Pods-SdkNaveggIOS.debug.xcconfig */,
+				72988B926D80B171D06EFC76 /* Pods-SdkNaveggIOS.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,11 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37C10DB320078DA400331A97 /* Build configuration list for PBXNativeTarget "SdkNaveggIOS" */;
 			buildPhases = (
-				7D5ED54F754CC6778D1DF8E0 /* [CP] Check Pods Manifest.lock */,
+				63638A6B0C6661CBA97236C3 /* [CP] Check Pods Manifest.lock */,
 				37C10D9A20078DA400331A97 /* Sources */,
 				37C10D9B20078DA400331A97 /* Frameworks */,
 				37C10D9C20078DA400331A97 /* Headers */,
 				37C10D9D20078DA400331A97 /* Resources */,
+				169A069658188A5F3D76FA63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +294,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		169A069658188A5F3D76FA63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SdkNaveggIOS/Pods-SdkNaveggIOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SdkNaveggIOS/Pods-SdkNaveggIOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SdkNaveggIOS/Pods-SdkNaveggIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		37281B93203F620200D186F9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -305,16 +324,20 @@
 			shellPath = /bin/sh;
 			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -sdk iphoneos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n                                                                      cp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      ######################\n                                                                      # On Release, copy the result to release directory\n                                                                      ######################\n                                                                      OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n                                                                      \n                                                                      rm -rf \"$OUTPUT_DIR\"\n                                                                      mkdir -p \"$OUTPUT_DIR\"\n                                                                      \n                                                                      cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n                                                                      \n                                                                      if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n                                                                      open \"${OUTPUT_DIR}/\"\n                                                                      fi";
 		};
-		7D5ED54F754CC6778D1DF8E0 /* [CP] Check Pods Manifest.lock */ = {
+		63638A6B0C6661CBA97236C3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SdkNaveggIOS-checkManifestLockResult.txt",
 			);
@@ -504,7 +527,7 @@
 		};
 		37C10DB420078DA400331A97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 513EFAB29955F7BAC9809B69 /* Pods-SdkNaveggIOS.debug.xcconfig */;
+			baseConfigurationReference = E4E260F374A1E9576564CA0C /* Pods-SdkNaveggIOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -539,7 +562,7 @@
 		};
 		37C10DB520078DA400331A97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A50BDC8A18EB1BE44175923B /* Pods-SdkNaveggIOS.release.xcconfig */;
+			baseConfigurationReference = 72988B926D80B171D06EFC76 /* Pods-SdkNaveggIOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
